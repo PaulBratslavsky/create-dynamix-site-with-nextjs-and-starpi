@@ -45,15 +45,14 @@ function blockRenderer(blocks) {
 
 export default async function Home() {
   const { data } = await getPage("home");
-  const blocks = data[0].attributes.Blocks;
-  const navigation = data[0].attributes.Navigation;
+  // const blocks = data[0].attributes.Blocks;
+  // const navigation = data[0].attributes.Navigation;
 
-  console.log(data);
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <PageNavbar navigation={navigation} />
-      {blockRenderer(blocks)}
+      {/* <PageNavbar navigation={navigation} /> */}
+      {/* {blockRenderer(blocks)} */}
       <Benefits />
       <Steps />
       <Faqs />

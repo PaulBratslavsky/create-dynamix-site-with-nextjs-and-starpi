@@ -4,37 +4,38 @@ export default function UmbrellaIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="73"
+      width="72"
       height="72"
-      viewBox="0 0 73 72"
+      viewBox="0 0 72 72"
       fill="none"
     >
-      <ellipse cx="36.2422" cy="36" rx="36.0872" ry="36" fill="#FFDAD1" />
-      <ellipse
-        cx="36.2422"
-        cy="36"
-        rx="36.0872"
-        ry="36"
-        fill="url(#paint0_linear)"
+      <circle cx="36" cy="36" r="36" fill="#D3D3FF" />
+      <circle cx="36" cy="36" r="36" fill="url(#paint0_linear)" />
+      <path
+        d="M14 36.5C14 30.7978 16.2652 25.3292 20.2972 21.2972C24.3292 17.2652 29.7978 15 35.5 15C41.2022 15 46.6708 17.2652 50.7028 21.2972C54.7348 25.3292 57 30.7978 57 36.5H14Z"
+        stroke="#6767CB"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M44.8889 31.9444H54C55.2082 31.9444 56.3669 32.4244 57.2213 33.2787C58.0756 34.1331 58.5556 35.2918 58.5556 36.5C58.5556 37.7082 58.0756 38.8669 57.2213 39.7213C56.3669 40.5756 55.2082 41.0556 54 41.0556H44.8889L35.7778 57H28.9444L33.5 41.0556H24.3889L19.8333 45.6111H13L17.5556 36.5L13 27.3889H19.8333L24.3889 31.9444H33.5L28.9444 16H35.7778L44.8889 31.9444Z"
-        stroke="#CD8675"
-        strokeWidth="3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M35.5 36.5V52.625C35.5 54.0505 36.0663 55.4177 37.0743 56.4257C38.0823 57.4337 39.4495 58 40.875 58C42.3005 58 43.6677 57.4337 44.6757 56.4257C45.6837 55.4177 46.25 54.0505 46.25 52.625"
+        stroke="#6767CB"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <defs>
         <linearGradient
           id="paint0_linear"
-          x1="36.2422"
+          x1="36"
           y1="0"
-          x2="36.2422"
+          x2="36"
           y2="72"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
         </linearGradient>
       </defs>
     </svg>
