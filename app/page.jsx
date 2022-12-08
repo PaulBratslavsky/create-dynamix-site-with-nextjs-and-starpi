@@ -1,5 +1,4 @@
 import qs from "qs";
-import PageNavbar from "../components/PageNavbar";
 import CTA from "../components/CTA";
 import Benefits from "../components/Benefits";
 import Hero from "../components/Hero";
