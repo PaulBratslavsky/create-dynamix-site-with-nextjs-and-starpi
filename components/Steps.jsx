@@ -1,9 +1,8 @@
-import React from "react";
-
 const data = {
   heading: "How it works",
   subHeading:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra ultrices nunc, non at",
+  linkId: "steps",
   steps: [
     {
       id: 1,
@@ -33,20 +32,21 @@ const data = {
 };
 
 export default function Steps() {
+  const { heading, subHeading, linkId, steps } = data;
   return (
-    <div className="container mx-auto px-4 xl:px-0 my-12 lg:my-24">
+    <div id={linkId} className="container mx-auto px-4 xl:px-0 my-12 lg:my-24">
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 items-center gap-8">
         <div>
           <h1 className="mt-12 text-color-gray text-2xl lg:text-5xl font-bold tracking-wider">
-            {data.heading}
+            {heading}
           </h1>
           <p className="lg:w-8/12 text-color-gray-light mt-5 mb-5 lg:mb-12">
-            {data.subHeading}
+            {subHeading}
           </p>
         </div>
         <div className="flex justify-end w-full">
           <div className="flex flex-col items-center">
-            {data.steps.map((step, index) => (
+            {steps.map((step, index) => (
               <div key={index} className="flex ">
                 <div className="flex flex-col items-center">
                   <div className="bg-color-purple w-24 h-24 flex items-center justify-center rounded-full">

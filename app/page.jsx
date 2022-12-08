@@ -1,9 +1,9 @@
 import qs from "qs";
 import PageNavbar from "../components/PageNavbar";
-import ShoutOut from "../components/ShoutOut";
+import CTA from "../components/CTA";
 import Benefits from "../components/Benefits";
-import CTA from "../components/cta";
-import Count from "../components/Count";
+import Hero from "../components/Hero";
+import Stats from "../components/Stats";
 import Steps from "../components/Steps";
 import Faqs from "../components/Faqs";
 
@@ -27,14 +27,15 @@ async function getPage(page) {
   return data;
 }
 
+// TODO: Refactor this to use be map
 function blockRenderer(blocks) {
   return blocks.map((block, index) => {
     console.log(block);
     switch (block.__component) {
       case "page.cta":
-        return <CTA data={block} key={index} />;
+        return <Hero data={block} key={index} />;
       case "page.shout-out":
-        return <ShoutOut data={block} key={index} />;
+        return <CTA data={block} key={index} />;
       case "page.count-data":
         return <Count data={block} key={index} />;
       default:
@@ -50,12 +51,14 @@ export default async function Home() {
 
 
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      {/* <PageNavbar navigation={navigation} /> */}
+    <div>
       {/* {blockRenderer(blocks)} */}
+      <Hero />
+      <Stats />
       <Benefits />
       <Steps />
       <Faqs />
+      <CTA />
     </div>
   );
 }

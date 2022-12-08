@@ -14,16 +14,16 @@ export default function UmbrellaIcon() {
       <path
         d="M14 36.5C14 30.7978 16.2652 25.3292 20.2972 21.2972C24.3292 17.2652 29.7978 15 35.5 15C41.2022 15 46.6708 17.2652 50.7028 21.2972C54.7348 25.3292 57 30.7978 57 36.5H14Z"
         stroke="#6767CB"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.5 36.5V52.625C35.5 54.0505 36.0663 55.4177 37.0743 56.4257C38.0823 57.4337 39.4495 58 40.875 58C42.3005 58 43.6677 57.4337 44.6757 56.4257C45.6837 55.4177 46.25 54.0505 46.25 52.625"
         stroke="#6767CB"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -34,8 +34,8 @@ export default function UmbrellaIcon() {
           y2="72"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
