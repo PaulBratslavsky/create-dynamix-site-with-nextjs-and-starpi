@@ -46,13 +46,10 @@ function blockRenderer(blocks) {
 
 export default async function Home() {
   const { data } = await getPage("home");
-  // const blocks = data[0].attributes.Blocks;
-  // const navigation = data[0].attributes.Navigation;
-
+  console.log(data)
 
   return (
     <div>
-      {/* {blockRenderer(blocks)} */}
       <Hero />
       <Stats />
       <Benefits />
