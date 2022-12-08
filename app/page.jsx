@@ -27,23 +27,6 @@ async function getPage(page) {
   return data;
 }
 
-// TODO: Refactor this to use be map
-function blockRenderer(blocks) {
-  return blocks.map((block, index) => {
-    console.log(block);
-    switch (block.__component) {
-      case "page.cta":
-        return <Hero data={block} key={index} />;
-      case "page.shout-out":
-        return <CTA data={block} key={index} />;
-      case "page.count-data":
-        return <Count data={block} key={index} />;
-      default:
-        return null;
-    }
-  });
-}
-
 export default async function Home() {
   const { data } = await getPage("home");
   console.log(data)
