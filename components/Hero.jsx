@@ -10,7 +10,7 @@ const data = {
   linkId: "#cta",
   link: {
     text: "Get a quote",
-    href: "/quote",
+    href: "/",
   },
   image: {
     url: "https://unsplash.it/640/425?random",
